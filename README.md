@@ -10,6 +10,11 @@ SNMP Simulator Control Plane is a set of tools facilitating
 automated, distributed and remotely controlled
 [SNMP Simulator](http://snmplabs.com/snmpsim) deployment.
 
+Why this fork?
+--------------
+[Original project](https://github.com/etingof/snmpsim-control-plane) by [Ilya Etingof](https://github.com/etingof) seems not to be continued anymore.
+Because of that, we try to maintain / enhance SNMP Simulator Control Plane.
+
 Features
 --------
 
@@ -37,5 +42,6 @@ post your question [on Stack Overflow](https://stackoverflow.com/questions/ask).
 
 Everyone is welcome to fork the repo and propose a feature or a fix!
 
+If you want to contact us, please mail to the [Thola Team](mailto:snmplabs@thola.io)
 
 Copyright (c) 2019-2020, [Ilya Etingof](mailto:etingof@gmail.com). All rights reserved.
