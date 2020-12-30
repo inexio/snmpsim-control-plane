@@ -53,14 +53,14 @@ with open('requirements.txt') as fl:
 DOCLINES = [x.strip() for x in (__doc__ or '').split('\n') if x]
 
 PARAMS = {
-    'name': 'snmpsim-control-plane',
+    'name': 'thola-snmpsim-control-plane',
     'version': version,
     'description': DOCLINES[0],
     'long_description': ' '.join(DOCLINES[1:]),
-    'maintainer': 'Ilya Etingof <etingof@gmail.com>',
+    'maintainer': 'Team Thola <snmplabs@thola.io>',
     'author': 'Ilya Etingof',
-    'author_email': 'etingof@gmail.com',
-    'url': 'http://snmplabs.com/snmpsim-control-plane',
+    'author_email': 'snmplabs@thola.io',
+    'url': 'http://snmplabs.thola.io/snmpsim-control-plane',
     'license': 'BSD',
     'platforms': ['any'],
     'classifiers': [x for x in CLASSIFIERS.split('\n') if x],
