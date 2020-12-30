@@ -1,14 +1,13 @@
 
 SNMP Simulator Control Plane
 ----------------------------
-[![PyPI](https://img.shields.io/pypi/v/snmpsim-control-plane.svg?maxAge=2592000)](https://pypi.org/project/snmpsim-control-plane/)
+[![PyPI](https://img.shields.io/pypi/v/snmpsim-control-plane.svg?maxAge=2592000)](https://pypi.org/project/thola-snmpsim-control-plane)
 [![Python Versions](https://img.shields.io/pypi/pyversions/snmpsim-control-plane.svg)](https://pypi.org/project/snmpsim-control-plane/)
-[![Build status](https://travis-ci.org/etingof/snmpsim-control-plane.svg?branch=master)](https://travis-ci.org/etingof/snmpsim-control-plane)
-[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://raw.githubusercontent.com/etingof/snmpsim-control-plane/master/LICENSE.txt)
+[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://raw.githubusercontent.com/inexio/snmpsim-control-plane/master/LICENSE.txt)
 
 SNMP Simulator Control Plane is a set of tools facilitating
 automated, distributed and remotely controlled
-[SNMP Simulator](http://snmplabs.com/snmpsim) deployment.
+[SNMP Simulator](http://snmplabs.thola.io/snmpsim) deployment.
 
 Why this fork?
 --------------
@@ -28,16 +27,16 @@ Docs & Downloads
 ----------------
 
 SNMP Simulator Control Plane tool is freely available for download from
-[PyPI](https://pypi.org/project/snmpsim-control-plane/) or
-[GitHub](https://github.com/etingof/snmpsim-control-plane/archive/master.zip).
+[PyPI](https://pypi.org/project/thola-snmpsim-control-plane) or
+[GitHub](https://github.com/inexio/snmpsim-control-plane/archive/master.zip).
 
-User documentation is maintained at [snmplabs.com](http://snmplabs.com/snmpsim-control-plane).
+User documentation is maintained at [snmplabs.com](http://snmplabs.thola.io/snmpsim-control-plane).
 
 Getting help
 ------------
 
 If something does not work as expected,
-[open an issue](https://github.com/etingof/snmpsim-control-plane/issues) at GitHub or
+[open an issue](https://github.com/inexio/snmpsim-control-plane/issues) at GitHub or
 post your question [on Stack Overflow](https://stackoverflow.com/questions/ask).
 
 Everyone is welcome to fork the repo and propose a feature or a fix!
