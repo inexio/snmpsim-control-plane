@@ -15,8 +15,7 @@ The snmpsim have to run with an non-priviliedged-user and group (for example snm
 ```
 adduser snmpsim
 mkdir -p /var/snmpsim /etc/snmpsim /var/run/snmpsim /var/log/snmpsim/metrics
-chown snmpsim:snmpsim /var/snmpsim /etc/snmpsim /var/run/snmpsim /var/log/snmpsim/metrics
-su - snmpsim
+susu - snmpsim
 ```
 
 ## Configuration files 
@@ -27,7 +26,7 @@ You need to create a config file for the management API tools:
 cat > /etc/snmpsim/snmpsim-management.conf <<EOF
 ```
 
-This command should output this:
+Add these lines to the file:
 
 ```
 SQLALCHEMY_DATABASE_URI = 'sqlite:////var/snmpsim/snmpsim-mgmt-restapi.db'
@@ -44,11 +43,10 @@ Also you have to create a config file for Metrics API tools:
 cat > /etc/snmpsim/snmpsim-metrics.conf <<EOF
 ```
 
-This command should print this: 
+Add these lines to the file:
 
 ```
 SQLALCHEMY_DATABASE_URI = 'sqlite:////var/snmpsim/snmpsim-metrics-restapi.db'
-DEBUG = False
 EOF
 ```
 
@@ -69,7 +67,7 @@ snmpsim-metrics-restapi --config /etc/snmpsim/snmpsim-metrics.conf \
 We want that the command responder is producing metrics, this could be enabled by passing the command-line optionto the process of command responder. You only have to modify the Management API template:
 
 ```
-cat > /etc/snmpsim/snmpsim-command-responder.j2 <<EOF\
+cat > /etc/snmpsim/snmpsim-command-responder.j2 <<EOF
 #!/bin/sh
 {% if context['labs'] %}
 exec snmpsim-command-responder \
@@ -105,7 +103,7 @@ To bind priviledeg UNIX Ports (<1024), you have to run *snmpsim-mgmt-supervisor*
 This could be done if you use the options for the *snmpsim-command-responder* "-process-user" and "process-group", as you could see in our service template too, here you should specify the non-priviledged-user and the group of this user.
 
 ```
-cat > /etc/snmpsim/snmpsim-command-responder.j2 <<EOF\
+cat > /etc/snmpsim/snmpsim-command-responder.j2 <<EOF
 #!/bin/sh
 {% if context['labs'] %}
 exec snmpsim-command-responder \
@@ -186,7 +184,7 @@ Now that you configured the snmpsim-control-plane, you could try uploading a sim
 cat > /tmp/public.snmprec <<EOF
 ````
 
-This command should output you:
+Add these lines to the file:
 
 ```
 1.3.6.1.2.1.1.1.0|4|Linux zeus 4.8.6.5-smp #2 SMP Sun Nov 13 14:58:11 CDT 2016 i686
