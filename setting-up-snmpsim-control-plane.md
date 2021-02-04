@@ -100,7 +100,7 @@ EOF
 
 To bind priviledeg UNIX Ports (<1024), you have to run *snmpsim-mgmt-supervisor* under root and tell *snmpsim-command-responder* to drop the priviledges after binding priviledged ports
 
-This could be done if you use the options for the *snmpsim-command-responder* "-process-user" and "process-group", as you could see in our service template too, here you should specify the non-priviledged-user and the group of this user.
+This could be done if you use the options for the *snmpsim-command-responder* "--process-user" and "--process-group", as you could see in our service template too, here you should specify the non-priviledged-user and the group of this user.
 
 ```
 cat > /etc/snmpsim/snmpsim-command-responder.j2 <<EOF
