@@ -23,14 +23,18 @@ Features
 * Collects and serves performance and operational metrics
 * REST API is compliant to OpenAPI 3.0.0
 
-Docs & Downloads
-----------------
+Downloads
+---------
 
 SNMP Simulator Control Plane tool is freely available for download from
 [PyPI](https://pypi.org/project/thola-snmpsim-control-plane) or
 [GitHub](https://github.com/inexio/snmpsim-control-plane/archive/master.zip).
 
-User documentation is maintained at [snmplabs.com](http://snmplabs.thola.io/snmpsim-control-plane).
+Docs 
+-----
+Here is the [setup guide](https://github.com/inexio/snmpsim-control-plane/blob/master/setting-up-snmpsim-control-plane.md).
+
+User documentation is maintained at [snmplabs.thola.io](http://snmplabs.thola.io/snmpsim-control-plane).
 
 Getting help
 ------------
