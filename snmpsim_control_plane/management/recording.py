@@ -52,7 +52,7 @@ def list_recordings(data_dir):
     recordings = []
 
     for filename in files:
-        stat = os.stat(filename, follow_symlinks=True)
+        stat = os.stat(filename)
 
         recording_type = get_recording_type(filename)
         if not recording_type:
